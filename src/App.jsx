@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import CardComponent from './CardComponent';
 import './App.css';
 
@@ -26,6 +26,7 @@ function App() {
   ];
   return (
     <>
+      <div class="shadow-top"></div>
       <div className="grid-container">
         <main>
           <h1>roko fumić</h1>
@@ -47,6 +48,7 @@ function App() {
           ))}
         </section>
       </div>
+      <div class="shadow-bottom"></div>
     </>
   );
 }
