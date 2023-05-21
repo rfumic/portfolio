@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #2d2d34;
+  color: #f1e4e8;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 2.5%;
+  margin: 0 8.75%;
+}
+
+main {
+  grid-column: 3 / span 5;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  main {
+    grid-column: span 4;
+  }
+}
