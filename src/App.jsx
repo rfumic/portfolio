@@ -39,12 +39,14 @@ function App() {
           </div>
         </main>
       </div>
-      <section>
-        <h2>some of my projects</h2>
-        {projects.map((project) => (
-          <CardComponent key={project.title} {...project} />
-        ))}
-      </section>
+      <div className="grid-container">
+        <section>
+          <h2>projects</h2>
+          {projects.map((project) => (
+            <CardComponent key={project.title} {...project} />
+          ))}
+        </section>
+      </div>
     </>
   );
 }
