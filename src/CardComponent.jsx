@@ -1,6 +1,6 @@
 import './CardComponent.css';
 export default function CardComponent({
-  title,
+  title = '',
   description,
   repoUrl,
   appUrl,
