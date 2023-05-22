@@ -34,7 +34,7 @@ function App() {
         <main>
           <h1>roko fumić</h1>
           <h3>
-            web developer, student @ <a href="https://fipu.unipu.hr">FIPU</a>
+            web developer, student @ <a href="https://fipu.unipu.hr">fipu</a>
           </h3>
           <div className="contact-links">
             <a href="https://www.linkedin.com/in/rokofumic">linkedin</a>

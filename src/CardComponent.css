@@ -38,7 +38,7 @@ img {
   opacity: 50%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 776px) {
   .card {
     margin-top: 5vh;
   }
