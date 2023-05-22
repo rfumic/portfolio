@@ -15,6 +15,29 @@ main,
 section {
   /* scroll-snap-align: start; */
 }
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -88,6 +111,7 @@ h2 {
   main {
     grid-column: span 4;
     margin: 2.5vh 0;
+    height: 30vh;
   }
 
   h1 {
@@ -96,6 +120,7 @@ h2 {
 
   h2 {
     font-size: 10.35vw;
+    text-align: left;
   }
 
   h3 {
@@ -110,6 +135,7 @@ h2 {
 
   .card-container {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-bottom: 15vw;
   }
 }
 

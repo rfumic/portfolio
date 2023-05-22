@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <div className="shadow-top"></div>
-      <div className="grid-container">
+      <div className="grid-container fade-in">
         <main>
           <h1>roko fumić</h1>
           <h3>
@@ -44,7 +44,7 @@ function App() {
           </div>
         </main>
       </div>
-      <div className="grid-container">
+      <div className="grid-container fade-in">
         <section>
           <h2>some of my projects</h2>
           <div className="card-container">

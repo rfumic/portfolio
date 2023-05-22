@@ -17,13 +17,15 @@ img {
 }
 .card-title {
   font-size: 3vw;
+  flex: 1;
 }
 .card-description {
   opacity: 50%;
+  flex: 2;
 }
 
 .url-container {
-  padding-bottom: 2vh;
+  flex: 1;
 }
 
 .url-container > a {
@@ -35,4 +37,16 @@ img {
 
 .url-container > a:hover {
   opacity: 50%;
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin-top: 5vh;
+  }
+  .text-div {
+    font-size: 5.12vw;
+  }
+  .card-title {
+    font-size: 9.2vw;
+  }
 }
