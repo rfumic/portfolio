@@ -8,25 +8,29 @@ function App() {
       title: 'studiu',
       description: 'a forum for students built with vue.js and firebase',
       repoUrl: 'https://github.com/rfumic/studiu',
-      appUrl: '#',
+      appUrl: 'https://frabjous-licorice-afe890.netlify.app/',
+      image:
+        'https://raw.githubusercontent.com/rfumic/studiu/master/screenshots/post.png',
     },
     {
       title: 'sudoku race',
       description: 'fullstack online sudoku made with vue.js and express',
-      repoUrl: 'https://github.com/rfumic/sudoku-race',
-      appUrl: '#',
+      repoUrl: 'https://github.com/rfumic/sudoku-race-frontend',
+      appUrl: 'https://sudoku-race.surge.sh/',
+      image:
+        'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.cameraegg.org%2Fwp-content%2Fuploads%2F2016%2F01%2FNikon-D500-Sample-Images-2.jpg&f=1&nofb=1&ipt=ce6d5afe4aa0120fb6c60e38296cda216c3b5337dc4b5eba7b347f2f914abd45&ipo=images',
     },
     {
       title: 'remismd',
       description: 'a markdown editor built with vue.js and electron',
-      repoUrl: 'https://github.com/rfumic/remismd',
-      appUrl: '#',
+      repoUrl: 'https://github.com/rfumic/RemisMD',
+      appUrl: 'https://github.com/rfumic/RemisMD/releases',
     },
     ,
   ];
   return (
     <>
-      <div class="shadow-top"></div>
+      <div className="shadow-top"></div>
       <div className="grid-container">
         <main>
           <h1>roko fumić</h1>
@@ -42,13 +46,15 @@ function App() {
       </div>
       <div className="grid-container">
         <section>
-          <h2>projects</h2>
-          {projects.map((project) => (
-            <CardComponent key={project.title} {...project} />
-          ))}
+          <h2>some of my projects</h2>
+          <div className="card-container">
+            {projects.map((project) => (
+              <CardComponent key={project.title} {...project} />
+            ))}
+          </div>{' '}
         </section>
       </div>
-      <div class="shadow-bottom"></div>
+      <div className="shadow-bottom"></div>
     </>
   );
 }

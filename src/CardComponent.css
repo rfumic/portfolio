@@ -1,0 +1,38 @@
+.card {
+  /* border: 2px solid blue; */
+  overflow: hidden;
+  font-size: 2vw;
+}
+img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 0.69vw;
+}
+.text-div {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card-title {
+  font-size: 3vw;
+}
+.card-description {
+  opacity: 50%;
+}
+
+.url-container {
+  padding-bottom: 2vh;
+}
+
+.url-container > a {
+  padding-right: 3vw;
+  text-decoration: none;
+  color: #b97375;
+  font-weight: bold;
+}
+
+.url-container > a:hover {
+  opacity: 50%;
+}
