@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import CardComponent from './CardComponent';
 import './App.css';
+import studiu from './assets/studiu.png';
+import remis from './assets/remis.jpg';
+import sudoku from './assets/sudoku-race.jpg';
 
 function App() {
   const projects = [
@@ -9,21 +12,21 @@ function App() {
       description: 'a forum for students built with vue.js and firebase',
       repoUrl: 'https://github.com/rfumic/studiu',
       appUrl: 'https://frabjous-licorice-afe890.netlify.app/',
-      image: 'src/assets/studiu.png',
+      image: studiu,
     },
     {
       title: 'sudoku race',
       description: 'fullstack online sudoku made with vue.js and express',
       repoUrl: 'https://github.com/rfumic/sudoku-race-frontend',
       appUrl: 'https://sudoku-race.surge.sh/',
-      image: 'src/assets/sudoku-race.jpg',
+      image: sudoku,
     },
     {
       title: 'remismd',
       description: 'a markdown editor built with vue.js and electron',
       repoUrl: 'https://github.com/rfumic/RemisMD',
       appUrl: 'https://github.com/rfumic/RemisMD/releases',
-      image: 'src/assets/remis.jpg',
+      image: remis,
     },
     ,
   ];
